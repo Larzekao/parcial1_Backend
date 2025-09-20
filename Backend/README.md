@@ -57,6 +57,14 @@ La migracion inicial se encuentra en `core/migrations/0001_initial.py`.
 
 Todos los viewsets ofrecen operaciones CRUD, filtros basicos (`?estado=`, `?residente=`) y paginacion (20 items por pagina).
 
+## Documentacion interactiva
+
+Gracias a `drf-spectacular` se expone la especificacion OpenAPI automaticamente:
+
+- `/docs/`: Swagger UI interactivo.
+- `/redoc/`: documentacion en Redoc.
+- `/api/schema/`: esquema OpenAPI en formato JSON.
+
 ## Autenticacion
 
 Por defecto se habilita autenticacion de sesion y basica de Django. Para clientes moviles se sugiere agregar `djangorestframework-simplejwt` u otro proveedor de tokens.
