@@ -1,0 +1,133 @@
+﻿.users {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.users__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.users__header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+
+.users__header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.users__header button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.65rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.users__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  background-color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5f5;
+  padding: 0.5rem 0.75rem;
+  min-width: 240px;
+}
+
+.users__filters button.ghost {
+  background: none;
+  border: 1px solid #94a3b8;
+  color: #1e293b;
+  border-radius: 0.6rem;
+  padding: 0.55rem 1.25rem;
+}
+
+.users__error,
+.users__feedback {
+  padding: 0.85rem 1rem;
+  border-radius: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.users__error {
+  background-color: rgba(248, 113, 113, 0.12);
+  color: #b91c1c;
+  border: 1px solid rgba(248, 113, 113, 0.35);
+}
+
+.users__feedback {
+  background-color: rgba(134, 239, 172, 0.25);
+  color: #065f46;
+  border: 1px solid rgba(134, 239, 172, 0.4);
+}
+
+.users__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  color: #475569;
+}
+
+.users__pagination button {
+  border-radius: 0.6rem;
+  border: 1px solid #94a3b8;
+  background: none;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+}
+
+.users__pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .users__filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .field input,
+  .field select {
+    min-width: auto;
+  }
+
+  .users__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .users__pagination {
+    justify-content: center;
+  }
+}
